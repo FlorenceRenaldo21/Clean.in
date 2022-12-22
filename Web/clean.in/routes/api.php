@@ -2,6 +2,10 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\order_controller;
+use App\Http\Controllers\API\user_controller;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +21,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::apiResource('order', order_controller::class);
+Route::apiResource('user', user_controller::class);
