@@ -58,7 +58,7 @@ class user_controller extends Controller
     {
         $user = user::find($id);
 
-
+        
         if($user) {
             return response()->json([
             'status' => 200,

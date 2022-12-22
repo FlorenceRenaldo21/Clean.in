@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\order;
+use App\Models\paket;
 
 
 class order_controller extends Controller
@@ -44,8 +45,10 @@ class order_controller extends Controller
             $order->id_paket = $request->id_paket;
             $order->alamat = $request->alamat;
             $order->berat= $request->berat;
-            $order->status = $request->status;
-            $order->total_harga = $request->total_harga;
+            $order->status = 1;
+            $paket = paket::find($order->id_paket);
+            $order->total_harga = $order->berat*$paket->harga;
+
             $order->save();
     
             return response()->json([
@@ -122,7 +125,6 @@ class order_controller extends Controller
             return response()->json([
             'status' => 200,
             'message' => 'berhasil',
-            'data' => $order
             ]);
 
             } else {
