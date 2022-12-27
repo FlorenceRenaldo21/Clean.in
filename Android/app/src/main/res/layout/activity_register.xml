@@ -89,6 +89,7 @@
             android:padding="15dp"
             android:text="register"
             android:backgroundTint="#F6502E"
+
             />
 
     </LinearLayout>
