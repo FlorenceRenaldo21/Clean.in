@@ -28,14 +28,12 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="155dp"
-        android:layout_marginTop="600dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="517dp"
         android:layout_marginEnd="150dp"
-        android:layout_marginBottom="100dp"
         android:text="Created By"
-        android:textSize="20dp"
-        android:textColor="#FBF5F4"/>
+        android:textColor="#FBF5F4"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/tv_NEKAT"
@@ -46,7 +44,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="130dp"
-        android:layout_marginTop="650dp"
+        android:layout_marginTop="550dp"
         android:layout_marginEnd="125dp"
         android:layout_marginBottom="30dp"
         android:text="N E K A T  T E A M"
