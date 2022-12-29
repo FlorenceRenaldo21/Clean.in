@@ -1,8 +1,11 @@
-package com.Nekat.CleanIn;
+package Com.NEKAT.CleanIn;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.Nekat.CleanIn.R;
+
 
 public class LoginActivity extends AppCompatActivity {
 
